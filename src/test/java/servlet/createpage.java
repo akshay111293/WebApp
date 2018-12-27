@@ -29,7 +29,7 @@ public class createpage extends HttpServlet {
 			String b=req.getParameter("problemdescription");
 			String c=req.getParameter("contact");
 			String d=req.getParameter("date");
-			String e=req.getParameter("status");
+			String e=req.getParameter("status"); 
 			
 			String sql= "INSERT INTO avt(product, pdesc, cont, datee, statuss ) VALUES ('"+a+"', '"+b+"','"+c+"','"+d+"','"+e+"' ) RETURNING *;";
 			ResultSet rs1= statement.executeQuery(sql);
